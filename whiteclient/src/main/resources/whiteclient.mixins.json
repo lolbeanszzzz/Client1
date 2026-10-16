@@ -1,0 +1,7 @@
+{
+  "required": true,
+  "package": "dev.white.client.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": ["CameraMixin", "EntityMixin", "ClientPlayerInteractionManagerMixin", "InteractionManagerInvoker", "KeyBindingMixin", "PlayerEntityMixin", "ClientPlayNetworkHandlerMixin", "ClientCommonNetworkHandlerMixin","SkyRenderingMixin", "CloudRendererMixin", "FogRendererMixin", "MinecraftClientAccessor", "ClientPlayerEntityMixin", "TextVisitFactoryMixin"],
+  "injectors": { "defaultRequire": 1 }
+}

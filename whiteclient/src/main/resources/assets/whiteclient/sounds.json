@@ -1,0 +1,6 @@
+{
+  "alert": {
+    "category": "master",
+    "sounds": [ { "name": "whiteclient:alert", "stream": false } ]
+  }
+}
