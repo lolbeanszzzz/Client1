@@ -1,20 +1,24 @@
-ilIegal client - source files for Fabric 1.21.11 (Yarn mappings)
+# KIRXCLIENT BETA - Fabric client mod for Minecraft 1.21.11
+
+This repository is a complete Gradle project. It includes the existing client GUI and
+module collection, plus a local custom-cape picker.
 
 SETUP
-1. Go to https://fabricmc.net/develop/template/ and generate a project:
-   Minecraft 1.21.11, Yarn mappings, mod id "whiteclient", package "dev.white.client".
-   UNTICK "Split client and common sources" (everything lives in src/main).
-2. Unzip the template, then delete its src/ folder and copy THIS src/ folder in its place.
-3. Open the folder in IntelliJ IDEA (Java 21) and let Gradle sync.
-4. Run:  ./gradlew runClient     (test in-game)
-   Build: ./gradlew build        (jar ends up in build/libs/)
-   Put the jar in your .minecraft/mods with Fabric Loader + Fabric API.
+1. Install Java 21 and Gradle 8.14 or newer.
+2. From this directory run `gradle runClient` to launch the development client.
+3. Run `gradle build` to create `build/libs/kirxclient-0.1.0.jar`.
+4. Install that jar with Fabric Loader and Fabric API for Minecraft 1.21.11.
 
 CONTROLS
 - RIGHT SHIFT opens/closes the GUI (also re-press to close)
 - Left click a module: toggle.  Right click: open its settings dropdown.
 - Middle click a module, then press a key: bind it (Esc/Backspace clears).
 - Drag a window by its title bar. Right click a title bar to collapse it.
+- Render -> Cape -> "Choose cape image" imports PNG, JPEG, GIF, or BMP files.
+  Images are converted to the standard 64x32 cape texture and stored under
+  `config/kirxclient/cape.png`. GIF uploads currently use their first frame.
+  Custom capes are client-side only; they are rendered for your own player and
+  are not uploaded to Mojang, a server, or other players.
 - Block ESP -> "Choose blocks..." opens a searchable block list (saved to config/whiteclient-blocks.txt).
    Selected blocks have a rainbow strip: drag it to give that block its own colour, [x] resets it to the default.
    Blocks are drawn as flat solid-colour outlines (no 3D cube, so no lag) that show through walls; optional Fill, Thickness and Color settings in the dropdown.

@@ -3,6 +3,7 @@ package dev.white.client;
 import dev.white.client.command.CommandManager;
 import dev.white.client.config.ConfigManager;
 import dev.white.client.module.ModuleManager;
+import dev.white.client.cape.CapeManager;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientLifecycleEvents;
@@ -17,6 +18,7 @@ public class WhiteClient implements ClientModInitializer {
     public void onInitializeClient() {
         dev.white.client.util.ShaderUi.init();      // registers the UI shader pipelines before the first frame
         modules = new ModuleManager();
+        CapeManager.loadSaved();
         ConfigManager.init();
         CommandManager.init();
         dev.white.client.util.WorldGfx.init();

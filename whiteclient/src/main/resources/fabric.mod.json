@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "id": "whiteclient",
-  "version": "1.1",
-  "name": "ilIegal client",
-  "description": "Client-side utility mod with a draggable-window GUI.",
+  "version": "${version}",
+  "name": "KIRXCLIENT BETA",
+  "description": "KIRXCLIENT BETA is a Fabric client mod for Minecraft 1.21.11.",
   "icon": "assets/whiteclient/icon.png",
   "environment": "client",
   "entrypoints": { "client": ["dev.white.client.WhiteClient"] },

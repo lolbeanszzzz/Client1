@@ -2,6 +2,7 @@
   "required": true,
   "package": "dev.white.client.mixin",
   "compatibilityLevel": "JAVA_21",
-  "client": ["CameraMixin", "EntityMixin", "ClientPlayerInteractionManagerMixin", "InteractionManagerInvoker", "KeyBindingMixin", "PlayerEntityMixin", "ClientPlayNetworkHandlerMixin", "ClientCommonNetworkHandlerMixin","SkyRenderingMixin", "CloudRendererMixin", "FogRendererMixin", "MinecraftClientAccessor", "ClientPlayerEntityMixin", "TextVisitFactoryMixin"],
+  "refmap": "whiteclient.refmap.json",
+  "client": ["CameraMixin", "EntityMixin", "ClientPlayerInteractionManagerMixin", "InteractionManagerInvoker", "KeyBindingMixin", "PlayerEntityMixin", "ClientPlayNetworkHandlerMixin", "ClientCommonNetworkHandlerMixin","SkyRenderingMixin", "CloudRendererMixin", "FogRendererMixin", "MinecraftClientAccessor", "ClientPlayerEntityMixin", "TextVisitFactoryMixin", "PlayerEntityRendererMixin"],
   "injectors": { "defaultRequire": 1 }
 }

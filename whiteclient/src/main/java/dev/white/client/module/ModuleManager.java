@@ -45,6 +45,7 @@ public class ModuleManager {
         modules.add(new SidebarUi());
         modules.add(new BlobUi());
         modules.add(new Fullbright());
+        modules.add(new Cape());
         modules.add(new UsernameHider());
         modules.add(new RadialMenu());
         modules.add(new PlayerInfo());

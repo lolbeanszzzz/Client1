@@ -51,7 +51,7 @@ public final class CommandManager {
 
     public static void say(String s) {
         if (mc.player == null) return;
-        mc.player.sendMessage(Text.literal("[ilIegal] ").formatted(Formatting.GRAY)
+        mc.player.sendMessage(Text.literal("[KIRXCLIENT] ").formatted(Formatting.GRAY)
                 .append(Text.literal(s).formatted(Formatting.WHITE)), false);
     }
 
