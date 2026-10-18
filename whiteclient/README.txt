@@ -4,7 +4,7 @@ This repository is a complete Gradle project. It includes the existing client GU
 module collection, plus a local custom-cape picker.
 
 SETUP
-1. Install Java 21 and Gradle 8.14 or newer.
+1. Install Java 21 and Gradle 9.2 or newer.
 2. From this directory run `gradle runClient` to launch the development client.
 3. Run `gradle build` to create `build/libs/kirxclient-0.1.0.jar`.
 4. Install that jar with Fabric Loader and Fabric API for Minecraft 1.21.11.

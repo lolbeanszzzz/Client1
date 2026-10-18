@@ -23,6 +23,7 @@ dependencies {
 
 loom {
     mixin {
+        useLegacyMixinAp = true
         defaultRefmapName = "whiteclient.refmap.json"
     }
 }
